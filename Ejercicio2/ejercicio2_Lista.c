@@ -31,18 +31,15 @@ int main() {
     struct Pelicula* head = crearPelicula("Iron Man 1");
     struct Pelicula* first = crearPelicula("Captain America 1");
     struct Pelicula* second = crearPelicula("The Avengers");
-    struct Pelicula* third = crearPelicula("Guardians of the Galaxy");
-    struct Pelicula* fourth = crearPelicula("Doctor Strange 1");
-    struct Pelicula* fifth = crearPelicula("Black Panther 1");
-    struct Pelicula* sixth = crearPelicula("Avengers: Endgame");
+    struct Pelicula* third = crearPelicula("Doctor Strange 1");
+    struct Pelicula* fourth = crearPelicula("Black Panther 1");
+    struct Pelicula* fifth = crearPelicula("Avengers: Endgame");
 
     head->next = first;
     first->next = second;
     second->next = third;
     third->next = fourth;
     fourth->next = fifth;
-    fifth->next = sixth;
-
 
     imprimirLista(head);
 
@@ -52,7 +49,6 @@ int main() {
     free(third);
     free(fourth);
     free(fifth);
-    free(sixth);
 
     return 0;
 };

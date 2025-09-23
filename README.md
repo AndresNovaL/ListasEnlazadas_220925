@@ -71,7 +71,7 @@ gcc Ejercicio2/ejercicio2_Lista.c -o Ejercicio2/ejercicio2_Lista
 
 ### Ejemplo 2: Lista de Películas Marvel
 
-- Creación de 7 nodos con nombres de películas: "Iron Man 1", "Captain America 1", "The Avengers", "Guardians of the Galaxy", "Doctor Strange 1", "Black Panther 1", "Avengers: Endgame.
-- Enlace secuencial de nodos (`head -> first -> second -> third -> fourth -> fifth -> sixth`).
+- Creación de 7 nodos con nombres de películas: "Iron Man 1", "Captain America 1", "The Avengers", "Doctor Strange 1", "Black Panther 1", "Avengers: Endgame.
+- Enlace secuencial de nodos (`head -> first -> second -> third -> fourth -> fifth`).
 - Recorrido completo con impresión de cada elemento mediante `imprimirLista()`.
 - Liberación correcta de memoria manual por cada nodo para evitar fugas.
