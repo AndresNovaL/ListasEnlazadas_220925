@@ -1,34 +1,35 @@
 # ListasEnlazadas_220925
 Clase de Estructura de Datos sobre la temática de Listas Enlazadas en programación.
 
-# Listas Enlazadas en C
-
-##  Descripción
+## Descripción
 Este repositorio contiene la implementación de dos ejemplos de listas enlazadas en lenguaje C:
-1. **Ejemplo 1: Lista simplemente enlazada** (`Ejercicio1_Lista`).
-2. **Ejemplo 2: Lista simplemente enlazada** (`Ejercicio2_lista`).
+1. **Ejemplo 1:** Lista simplemente enlazada enfocada a lista de productos alimenticios (`Ejercicio1/ejercicio1_Lista.c`).
+2. **Ejemplo 2:** Lista simplemente enlazada (`Ejercicio2/ejercicio2_Lista.c`).
 
 El objetivo es aplicar buenas prácticas de documentación y flujo de trabajo con ramas en Git/GitHub, siguiendo la estructura vista en clase.
 
-## Compilación y ejecución
-```bash
-## Compilar el archivo
-gcc lista_Simple/lista_Simple.c -o lista_Simple/lista_Simple
+## Compilación y Ejecución
 
-## Ejecutar el programa
-./lista_Simple/lista_Simple
+### Ejemplo 1: Lista simplemente enlazada
+```bash
+
+# Compilar el archivo
+gcc Ejercicio1/ejercicio1_Lista.c -o Ejercicio1/ejercicio1_Lista
+
+# Ejecutar el programa
+./Ejercicio1/ejercicio1_Lista
+
 ```
 
----
-
-## 📂 Estructura del repositorio
+## Estructura del repositorio
+```
 .
-├── lista_Simple/        # Implementación de lista simplemente enlazada
-│   └── lista_Simple.c
-├── lista_Doble/         # Implementación de lista doblemente enlazada
-│   └── lista_Doble.c
+├── Ejercicio1/          # Implementación del primer ejemplo (lista simplemente enlazada)
+│   └── ejercicio1_Lista.c
+├── Ejercicio2/          # Implementación del segundo ejemplo (lista simplemente enlazada)
+│   └── ejercicio2_Lista.c
 └── README.md            # Documentación del proyecto
-
+```
 
 ---
 
