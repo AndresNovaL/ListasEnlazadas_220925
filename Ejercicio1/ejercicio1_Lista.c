@@ -3,20 +3,20 @@
 #include <string.h> 
 
 struct Producto {
-    char nombreProducto [20];
+    char nombreProducto [30];
     struct Producto* next;
 };
 
 struct Producto* crearProducto(char*nombreProducto) {
-    struct Producto* new = (struct Producto*) malloc(sizeof(struct Producto));
-    if (new == NULL) {
+    struct Producto* nuevoProducto = (struct Producto*) malloc(sizeof(struct Producto));
+    if (nuevoProducto == NULL) {
         printf("Error al reservar memoria\n");
         exit (1);
     }
 
-    strcpy(new->nombreProducto, nombreProducto);
-    new->next = NULL;
-    return new;
+    strcpy(nuevoProducto->nombreProducto, nombreProducto);
+    nuevoProducto->next = NULL;
+    return nuevoProducto;
 }
 
 void imprimirLista (struct Producto* head){
@@ -32,20 +32,21 @@ void imprimirLista (struct Producto* head){
 
 int main () {
     struct Producto* head = crearProducto("Aceite");
-    struct Producto* second = crearProducto("Leche");
-    struct Producto* third = crearProducto("Arroz");
+    struct Producto* first = crearProducto("Leche");
+    struct Producto* second = crearProducto("Arroz");
+    struct Producto* third = crearProducto("Azúcar");
 
-    head->next = second;
+    head->next = first;
+    first->next = second;
     second->next = third;
 
     imprimirLista(head);
     
-    struct Producto* temp;
-    while (head != NULL) {
-        temp = head;
-        head = head->next;
-        free(temp);
-    }
+    // Liberamos la memoria de cada nodo
+    free(head);
+    free(first);
+    free(second);
+    free(third);
 
     return 0;
 }
